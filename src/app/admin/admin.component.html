@@ -1,0 +1,26 @@
+<h3>Add New Rant or Rave</h3>
+<div>
+  <div>
+    <label>Date:</label>
+    <br>
+    <input #newDate>
+  </div>
+
+  <div>
+    <label>Location:</label>
+    <br>
+    <input #newLocationt>
+  </div>
+
+  <div>
+    <label>Title:</label>
+    <br>
+    <textarea #newTitle></textarea>
+  </div>
+  <div>
+      <label>Details:</label>
+      <br>
+      <textarea #newDetails></textarea>
+    </div>
+    <button (click)="submitForm(newDate.value, newTitle.value, newLocationt.value, newDetails.value; newDate.value ='', newTitle.value ='', newLocationt.value ='', newDetails.value ='') ">Add</button>
+</div>

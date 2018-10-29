@@ -17,11 +17,11 @@ export class RantService {
   }
 
   getRantsById(rantId: number){
-    for(var i=0; i<= RANTS.length -1; i++){
-      if(RANTS[i].id === rantId){
-        return RANTS[i];
-      }
-    }
+    // for(var i=0; i<= RANTS.length -1; i++){
+    //   if(RANTS[i].id === rantId){
+    //     return RANTS[i];
+    //   }
+    // }
   }
 
 }

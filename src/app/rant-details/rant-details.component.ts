@@ -22,7 +22,7 @@ export class RantDetailsComponent implements OnInit {
       this.rantId = parseInt(urlParameters['id']);
     });
 
-    this.rantToDisplay = this.rantService.getRantsById(this.rantId);
+    // this.rantToDisplay = this.rantService.getRantsById(this.rantId);
 
   }
 

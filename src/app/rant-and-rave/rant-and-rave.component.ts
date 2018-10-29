@@ -20,12 +20,10 @@ export class RantAndRaveComponent implements OnInit{
     this.rants = this.rantService.getRants();
   }
 
-  // rants: RantRave [];
-
   constructor(private router: Router, private rantService: RantService){}
 
   goToDetailPage(clickedRant: RantRave){
-    this.router.navigate(['rants', clickedRant.id])
+    // this.router.navigate(['rants', clickedRant.id])
   };
   newRant=null;
   addRants(){
