@@ -1,14 +1,19 @@
 import { Injectable } from '@angular/core';
 import { RANTS } from './mock-rants';
 import {RantRave} from './rant-rave.model';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+
 
 @Injectable()
 export class RantService {
+  rants: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) { 
+    this.rants = database.list('rants');
+  }
 
   getRants(){
-    return RANTS;
+    return this.rants;
   }
 
   getRantsById(rantId: number){
