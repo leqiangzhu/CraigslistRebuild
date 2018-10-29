@@ -1,4 +1,5 @@
 <a class="navbar-brand" routerLink="">Home</a>
-<p>
-  I can't believe these vizio's are passing off for smart TV's. I don't know what's worse the cheating wives of lake stevens or these sub par tvs!!!!!!!!!!!!!!
-</p>
+<h2>Rants And Raves</h2>
+<div *ngFor="let rant of rants" (click)="goToDetailPage(rant)">
+<h4>{{rant.date}} - {{rant.title}}</h4>
+</div>
