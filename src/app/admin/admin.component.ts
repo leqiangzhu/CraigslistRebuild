@@ -16,7 +16,9 @@ export class AdminComponent implements OnInit {
   }
 
   submitForm(date:string, title: string, location:string, details: string) {
-    var newRantRave: RantRave = new RantRave (date, title,location, details)
+    var newRantRave: RantRave = new RantRave (date, title,location, details);
+    this.rantService.addRant(newRantRave)
+
     console.log(newRantRave);
   }
 }

@@ -16,6 +16,11 @@ export class RantService {
     return this.rants;
   }
 
+  addRant(newRantRave: RantRave) {
+    this.rants.push(newRantRave);
+  }
+
+
   getRantsById(rantId: number){
     // for(var i=0; i<= RANTS.length -1; i++){
     //   if(RANTS[i].id === rantId){
